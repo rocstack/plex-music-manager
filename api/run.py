@@ -10,8 +10,8 @@ app.config['SECRET_KEY'] = 'supersecretsessionkey'
 app.config['SESSION_TYPE'] = 'filesystem'  # Use filesystem session
 Session(app)
 
-SPOTIPY_CLIENT_ID = '42f51946e3e24f6da910e65110ec9ea0'
-SPOTIPY_CLIENT_SECRET = '21ac8c5915b044f48a207060bf5f8ed7'
+SPOTIPY_CLIENT_ID = ''
+SPOTIPY_CLIENT_SECRET = ''
 SPOTIPY_REDIRECT_URI = 'http://localhost:5000/spotify/callback'
 SCOPE = "user-library-read playlist-read-private user-follow-read"
 
