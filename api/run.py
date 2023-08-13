@@ -10,10 +10,10 @@ app.config['SECRET_KEY'] = 'supersecretsessionkey'
 app.config['SESSION_TYPE'] = 'filesystem'  # Use filesystem session
 Session(app)
 
-SPOTIPY_CLIENT_ID = ''
-SPOTIPY_CLIENT_SECRET = ''
-SPOTIPY_REDIRECT_URI = 'http://localhost:5173/spotify/callback'
-SCOPE = 'user-library-read playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private'
+SPOTIPY_CLIENT_ID = '42f51946e3e24f6da910e65110ec9ea0'
+SPOTIPY_CLIENT_SECRET = '21ac8c5915b044f48a207060bf5f8ed7'
+SPOTIPY_REDIRECT_URI = 'http://localhost:5000/spotify/callback'
+SCOPE = "user-library-read playlist-read-private user-follow-read"
 
 sp_oauth = SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET, redirect_uri=SPOTIPY_REDIRECT_URI, scope=SCOPE)
 
